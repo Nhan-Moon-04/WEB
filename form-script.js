@@ -6,8 +6,7 @@ const sign = document.querySelector("#sign");
 const signup = document.querySelector('#signup')
 const signdone = document.querySelector("#signdone");
 const checksignin = document.querySelector("#checksignin");
-var close = document.querySelector('.close');
-var gallery = document.querySelector('.gallery');
+
 
 function sign_in() {
     loginBtn.style.backgroundColor = "#21264D";
@@ -199,13 +198,7 @@ function validatePasswordInputSignIn() {
 
 
 
-function showGallery() {
-    gallery.classList.add('show');
-}
 
-close.addEventListener('click', function() {
-    gallery.classList.remove('show')
-})
 
 checksignin.addEventListener('click', function() {
     sumsignin = 0;
@@ -214,6 +207,13 @@ checksignin.addEventListener('click', function() {
     sign.classList.remove('hide')
     signdone.style.opacity = "0";
     if (sumsignin == 2) {
-        showGallery();
+        var signinButton = document.querySelector('#signinButton');
+
+        signinButton.addEventListener('click', function() {
+            if (sumsignin == 2) {
+                window.location.href = 'landing_page.html';
+            }
+        });
     }
+
 })
