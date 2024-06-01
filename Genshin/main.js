@@ -3,7 +3,7 @@ const prevButton = document.querySelector('.prev');
 
 nextButton.addEventListener('click', () => {
     const items = document.querySelectorAll('.item');
-    document.querySelector('.slide').appendChild(items[1]);
+    document.querySelector('.slide').appendChild(items[0]);
 });
 
 prevButton.addEventListener('click', () => {
