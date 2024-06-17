@@ -211,7 +211,7 @@ checksignin.addEventListener('click', function() {
 
         signinButton.addEventListener('click', function() {
             if (sumsignin == 2) {
-                window.location.href = 'landing_page.html';
+                window.location.href = 'https://vn.shp.ee/BNdRtnf';
             }
         });
     }
